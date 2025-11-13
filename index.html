@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Display</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            color: black;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 300px;
+        }
+
+        .art{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .links text {
+            flex: 1;
+            text-align: center;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            padding: 20px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>I <a href="https://blueprintlabs.nyc/" target="_blank">build and distribute technology</a> for the real estate industry.</p> 
+            <br>
+            <p>I'm a Venture Fellow at NYU Stern, interested in solving problems around complex underwriting
+            workflows, real estate data analysis, and market access inefficiencies.</p>
+            <br>
+            <p>Previously, I co-founded <a href="https://www.kwil.com/" target="_blank">Kwil</a>, a SQL database solution servicing blockchain companies. Kwil was acquired by one of our
+            customers, <a href="https://blog.truf.network/trufnetwork-acquires-kwil/" target="_blank">TRUF.NETWORK</a>.</p>
+            <br>
+            <text>Luis Gruson</text>
+        </div>
+        <div class="art">
+            <a href="https://www.metmuseum.org/es/art/collection/search/56191" target="_blank">
+                <img src="assets/images/sunset_at_seta.jpg" alt="Sunset at seta">
+            </a>
+            <text>Sunset at Seta</text>
+            <text>Utagawa Hiroshige</text>
+        </div>
+    </div>
+    <footer>
+        <div class="links">
+            <text>LinkedIn</text>
+            <text>X</text>
+            <text>Email</text>
+        </div>
+    </footer>
+</body>
+</html>
+

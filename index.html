@@ -3,36 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Display</title>
+    <title>Luis Gruson</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <style>
+        @font-face {
+            font-family: 'Berkeley Mono';
+            src: url('assets/fonts/BerkeleyMonoTrial-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Berkeley Mono', monospace;
         }
 
         body {
-            background-color: white;
+            background-color: #fafafa;
             color: black;
             height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            font-size: 14px;
         }
 
         .container {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 300px;
+            width: 320px;
         }
 
         .art{
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            justify-content: left;
+            align-items: left;
+            margin-top: 14px;
         }
 
         .links {
@@ -47,14 +58,7 @@
             text-align: center;
         }
 
-        footer {
-            position: fixed;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 300px;
-            padding: 20px 0;
-        }
+
 
         a {
             text-decoration: none;
@@ -62,43 +66,46 @@
         }
 
         a:hover {
-            text-decoration: underline;
+            color: #96b4b2;
         }
 
         img {
             height: auto;
             width: 100%;
         }
+
+        small {
+            margin: 0;
+            padding: 0;
+            font-size: 6pt;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <p>I <a href="https://blueprintlabs.nyc/" target="_blank">build and distribute technology</a> for the real estate industry.</p> 
+            <p>I <a href="https://blueprintlabs.nyc/" target="_blank">build and distribute technology<small>[1]</small></a> for the real estate industry.</p> 
             <br>
             <p>I'm a Venture Fellow at NYU Stern, interested in solving problems around complex underwriting
             workflows, real estate data analysis, and market access inefficiencies.</p>
             <br>
-            <p>Previously, I co-founded <a href="https://www.kwil.com/" target="_blank">Kwil</a>, a SQL database solution servicing blockchain companies. Kwil was acquired by one of our
-            customers, <a href="https://blog.truf.network/trufnetwork-acquires-kwil/" target="_blank">TRUF.NETWORK</a>.</p>
+            <p>Previously, I co-founded <a href="https://www.kwil.com/" target="_blank">Kwil<small>[2]</small></a>, a SQL database solution servicing blockchain companies. Kwil was acquired by one of our
+            customers, <a href="https://blog.truf.network/trufnetwork-acquires-kwil/" target="_blank">TRUF.NETWORK<small>[3]</small></a>.</p>
             <br>
-            <text>Luis Gruson</text>
-        </div>
+            <p>Luis Gruson</p>
+            <a href="https://x.com/luisgruson" target="_blank">[ X ]</a>
+            <a href="https://www.linkedin.com/in/luisgruson/" target="_blank">[ LinkedIn ]</a>
+            <a href="mailto:lg@luisgruson.com" target="_blank">[ Email ]</a>
         <div class="art">
             <a href="https://www.metmuseum.org/es/art/collection/search/56191" target="_blank">
                 <img src="assets/images/sunset_at_seta.jpg" alt="Sunset at seta">
             </a>
-            <text>Sunset at Seta</text>
-            <text>Utagawa Hiroshige</text>
+            <text>Sunset at Seta | 瀬田夕照</text>
+            <text>Utagawa Hiroshige | 歌川広重</text>
         </div>
     </div>
-    <footer>
-        <div class="links">
-            <text>LinkedIn</text>
-            <text>X</text>
-            <text>Email</text>
-        </div>
-    </footer>
 </body>
 </html>
+
 
